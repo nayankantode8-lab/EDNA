@@ -1,9 +1,6 @@
+streamlit
 faiss-cpu
 biopython
-streamlit
-os
-pandas 
+pandas
 numpy
-io
-re
 scikit-learn
