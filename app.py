@@ -21,9 +21,9 @@ DEFAULT_THRESHOLD  = 1.2   # distance threshold
 
 def split_tokens(s): return s.split()
 
-st.set_page_config(page_title="🌊 eDNA SSU Dashboard", layout="wide")
-st.title("🌊 eDNA SSU Dashboard")
-st.markdown("📊 Explore **species diversity** from SSU database and classify new sequences.")
+st.set_page_config(page_title="🌊 eDNA Eukaryotic Dashboard", layout="wide")
+st.title("🌊 eDNA Eukaryotic Dashboard")
+st.markdown("📊 Explore **species diversity** from Eukaryotic database and classify new sequences.")
 
 # ---------------- Load artifacts ----------------
 @st.cache_resource(ttl=3600)
