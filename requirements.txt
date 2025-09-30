@@ -1,7 +1,6 @@
 faiss-cpu
 biopython
 streamlit
-pickle
 os
 pandas 
 numpy
