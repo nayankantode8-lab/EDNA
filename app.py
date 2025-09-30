@@ -10,10 +10,11 @@ import pandas as pd
 import os
 
 # ---------------- CONFIG ----------------
-FAISS_INDEX_PATH   = ".ssu_faiss.index"        # adjust if needed
-VECTORIZER_PATH    = ".ssu_vectorizer.pkl"
-IDS_PATH           = ".ssu_ids.pkl"
-TAX_PATH           = ".SSU_taxonomy.txt"      # <-- using your taxonomy .txt
+current_folder=os.path.dirname(os.path.abspath(__file__))
+FAISS_INDEX_PATH   = os.path.join(current_folder,"ssu_faiss.index")        # adjust if needed
+VECTORIZER_PATH    = os.path.join(current_folder,"ssu_vectorizer.pkl")
+IDS_PATH           = os.path.join(current_folder,"ssu_ids.pkl")
+TAX_PATH           = os.path.join(current_folder,"SSU_taxonomy.txt")      # <-- using your taxonomy .txt
 DEFAULT_KMER       = 6
 DEFAULT_TOPK       = 5
 DEFAULT_THRESHOLD  = 1.2   # distance threshold
